@@ -3,10 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Filter Table</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    
+
+<header>
+       <h1>Filter Table</h1>
+       <label for="userInput">
+        <input type="search" name="filter" id="userInput">
+       </label>
+    <div class="button-div">
+        <button onclick="button1()">Search By Item Name</button>
+        <button onclick="button2()">Search By Item Categorey</button>
+        <button onclick="button3()">Search By Item Type</button>
+    </div>
+</header>
+
+    <table id="table">
+        <tr>
+            <th id="item-name">Item Name</th>
+            <th id="item-categorey">Categorey</th>
+            <th id="item-type">Item Type</th>
+        </tr>
+<tr><td>Apple</td><td>Food</td><td>Fruit</td></tr>
+<tr><td>Banana</td><td>Food</td><td>Fruit</td></tr>
+<tr><td>Carrot</td><td>Food</td><td>Vegetable</td></tr>
+<tr><td>Potato</td><td>Food</td><td>Vegetable</td></tr>
+<tr><td>Orange</td><td>Food</td><td>Fruit</td></tr>
+<tr><td>Laptop</td><td>Electronics</td><td>Device</td></tr>
+<tr><td>Mobile</td><td>Electronics</td><td>Device</td></tr>
+<tr><td>Headphones</td><td>Electronics</td><td>Accessory</td></tr>
+<tr><td>Charger</td><td>Electronics</td><td>Accessory</td></tr>
+<tr><td>Mouse</td><td>Electronics</td><td>Accessory</td></tr>
+<tr><td>Shirt</td><td>Clothing</td><td>Men Clothes</td></tr>
+<tr><td>T-Shirt</td><td>Clothing</td><td>Men Clothes</td></tr>
+<tr><td>Jeans</td><td>Clothing</td><td>Men Clothes</td></tr>
+<tr><td>Abaya</td><td>Clothing</td><td>Women Clothes</td></tr>
+<tr><td>Scarf</td><td>Clothing</td><td>Women Clothes</td></tr>
+<tr><td>Dress</td><td>Clothing</td><td>Women Clothes</td></tr>
+<tr><td>Notebook</td><td>Stationery</td><td>Paper</td></tr>
+<tr><td>Pen</td><td>Stationery</td><td>Writing Tool</td></tr>
+<tr><td>Marker</td><td>Stationery</td><td>Writing Tool</td></tr>
+<tr><td>Pencil</td><td>Stationery</td><td>Writing Tool</td></tr>
+<tr><td>Water Bottle</td><td>Accessories</td><td>Daily Use</td></tr>
+<tr><td>Bag</td><td>Accessories</td><td>Daily Use</td></tr>
+<tr><td>Wallet</td><td>Accessories</td><td>Daily Use</td></tr>
+<tr><td>Sofa</td><td>Furniture</td><td>Home</td></tr>
+<tr><td>Chair</td><td>Furniture</td><td>Home</td></tr>
+<tr><td>Table</td><td>Furniture</td><td>Home</td></tr>
+<tr><td>Fan</td><td>Electronics</td><td>Home Appliance</td></tr>
+<tr><td>AC</td><td>Electronics</td><td>Home Appliance</td></tr>
+<tr><td>Refrigerator</td><td>Electronics</td><td>Home Appliance</td></tr>
+<tr><td>Book</td><td>Education</td><td>Reading</td></tr>
+<tr><td>Dictionary</td><td>Education</td><td>Reading</td></tr>
+<tr><td>School Bag</td><td>Education</td><td>Supplies</td></tr>
+<tr><td>Cricket Bat</td><td>Sports</td><td>Outdoor</td></tr>
+<tr><td>Football</td><td>Sports</td><td>Outdoor</td></tr>
+<tr><td>Tennis Ball</td><td>Sports</td><td>Outdoor</td></tr>
+<tr><td>Shoes</td><td>Footwear</td><td>Men Clothes</td></tr>
+<tr><td>Sandals</td><td>Footwear</td><td>Women Clothes</td></tr>
+<tr><td>Sneakers</td><td>Footwear</td><td>Men Clothes</td></tr>
+<tr><td>Perfume</td><td>Cosmetics</td><td>Fragrance</td></tr>
+<tr><td>Lipstick</td><td>Cosmetics</td><td>Makeup</td></tr>
+<tr><td>Cream</td><td>Cosmetics</td><td>Skin Care</td></tr>
+<tr><td>Watch</td><td>Accessories</td><td>Fashion</td></tr>
+<tr><td>Ring</td><td>Accessories</td><td>Fashion</td></tr>
+<tr><td>Necklace</td><td>Accessories</td><td>Jewelry</td></tr>
+<tr><td>Watermelon</td><td>Food</td><td>Fruit</td></tr>
+<tr><td>Cucumber</td><td>Food</td><td>Vegetable</td></tr>
+<tr><td>Eggs</td><td>Food</td><td>Protein</td></tr>
+<tr><td>Milk</td><td>Food</td><td>Dairy</td></tr>
+<tr><td>Coffee</td><td>Food</td><td>Beverage</td></tr>
+<tr><td>Tea</td><td>Food</td><td>Beverage</td></tr>
+
+    </table>
 
     <script src="app.js"></script>
 </body>

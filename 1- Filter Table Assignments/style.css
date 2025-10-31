@@ -1,0 +1,74 @@
+body {
+    font-family: poppins;
+    background-color: rgba(132, 34, 132, 0.4);
+}
+h1 {
+    font-size: 40px;
+    text-shadow: 3px 3px 5px black;
+}
+header {
+    text-align: center;
+}
+.button-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    gap: 10px;
+}
+button{
+    padding: 7px 3px;
+    width: 20%;
+    border-radius: 15px;
+    font-family: poppins;
+    cursor: pointer;
+}
+button:hover, button:focus{
+    background-color: bisque;
+    font-weight: bold;
+}
+table{
+    border: 1px solid black;
+    width: 70%;
+    margin: auto;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+td{
+    border-bottom: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    padding-left: 35px;
+    border-right: 1px solid black;
+}
+th {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+tr:hover {
+  background-color: #b8d9de;
+  transition: 0.3s ease;  
+  color: #000;
+}
+th{
+    background-color: #000;
+    color: #fff;
+
+}
+#userInput {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640'><path d='M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 27px;
+    padding: 10px;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    width: 60%;
+    transition: all 0.3s ease;
+    border-color: #6366f1; 
+    box-shadow: 3 3 6px rgba(59, 130, 246, 0.5); 
+    font-family: poppins;
+
+}
