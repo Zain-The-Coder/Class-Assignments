@@ -72,3 +72,46 @@ th{
     font-family: poppins;
 
 }
+
+@media(max-width: 620px) {
+    .button-div {
+        width: 100%;
+        justify-content: space-around;
+    }
+    button {
+        width: 30%;
+        padding: 2px;
+    }
+    table td , th{
+        padding: 10px ;
+    }
+}
+@media(max-width: 480px) {
+    .button-div {
+        width: 100%;
+        justify-content: space-around;
+    }
+    button {
+        width: 30%;
+        padding: 2px;
+        font-size: 13px;
+    }
+    table td , th{
+        padding: 10px ;
+    }
+}
+
+@media(max-width: 400px) {
+    .button-div {
+        width: 100%;
+        justify-content: space-around;
+    }
+    button {
+        width: 30%;
+        padding: 2px;
+        font-size: 10px;
+    }
+    table td , th{
+        padding: 3px ;
+    }
+}
