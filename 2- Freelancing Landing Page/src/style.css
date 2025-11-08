@@ -1,0 +1,21 @@
+#first-div-image{
+    background-image: url(../assests/first-pic-div.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#second-div-image {
+    background-image: url(../assests/second-pic-div\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#third-div-image {
+    background-image: url(../assests/third-pic-div.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#fourth-div-image {
+    background-image: url(../assests/fourth-picc-div.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
