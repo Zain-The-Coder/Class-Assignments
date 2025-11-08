@@ -440,11 +440,20 @@
   .text-\[\#25A4AD\] {
     color: #25A4AD;
   }
+  .text-\[\#25a4ad\] {
+    color: #25a4ad;
+  }
   .text-\[\#F5B91E\] {
     color: #F5B91E;
   }
   .text-\[\#fff\] {
     color: #fff;
+  }
+  .text-\[50p\] {
+    color: 50p;
+  }
+  .text-\[50ps\] {
+    color: 50ps;
   }
   .text-\[gold\] {
     color: gold;
