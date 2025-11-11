@@ -19,11 +19,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-#main-tag {
-    background-image: url(../assests/hero-sec.jpg);
-    background-repeat: no-repeat;
-    ;
-}
 #feature-div1 , #feature-div2 , #feature-div3 , #feature-div4 {
     transition: transform 1s ease;
 }
