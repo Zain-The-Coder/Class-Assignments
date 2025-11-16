@@ -19,6 +19,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+button{
+    transition: all 1s ease ;
+}
+button:hover {
+    transition: all 1s ease ;
+}
 #feature-div1 , #feature-div2 , #feature-div3 , #feature-div4 {
     transition: transform 1s ease;
 }

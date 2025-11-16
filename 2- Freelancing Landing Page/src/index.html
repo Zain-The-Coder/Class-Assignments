@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="./output.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../src/responsive.css">
 </head>
 
-<body class="font-[poppins]">
+<body class="font-[poppins] bg-[url(../assests/bg-image.png)]">
 
-                                <!-- Header Bar Code -->
+                                              <!-- Header Bar Code -->
 
-    <header class="flex justify-between items-center w-[80%] m-auto mt-[20px] text-[11.3px] font-normal items-centerbg-[#fff] sticky top-3 z-50 bg-[#fff]">
+    <header id="header-tag" class="flex justify-between items-center w-[80%] m-auto mt-[20px] text-[11.3px] font-normal items-center bg-[#fff] sticky top-3 z-50 bg-[#fff]">
         <nav>
             <ul class="flex gap-[30px]">
                 <li><a href="#" class="focus:font-bold focus:text-[13px] focus:text-[#25A4AD]">Payme</a></li>
@@ -27,18 +28,20 @@
             </ul>
         </nav>
 
-        <div class="flex gap-[17px] relative">
-            <button>Sign In</button>
+        <div id="header-button-div" class="flex gap-[17px] relative">
+            <button class="pointer">Sign In</button>
             <button class=" border border-[#25A4AD] text-[#25A4AD] pt-2.5 pb-2.5 w-[90px] cursor-pointer hover:text-[#fff] hover:bg-[#25a4ad]">Sign Up</button>
         </div>
     </header>
 
-    <!-- Main Section -->
 
-<main id="main-tag" class="bg-[url('../assests/hero-sec.jpg')] h-[142vh] sm:h-[100vh] md:h-[130vh] border">
-    <div class="sm:ml-[10px] flex justify-left ml-[80px] h-full ">
-        <div class="sm:w-[100%] sm:ml-[80px] sm:text-[50px] flex flex-col gap-[10px] justify-center">
-        <h1 class="sm:text-[51px] md:text-[57px] borderlg:text-[60px] xl:text-[70px] tracking-[2px] text-black">Providing <br> Best <br> 
+                                                 <!-- Main Section -->
+
+
+<main id="main-tag" class="bg-[url('../assests/hero-sec.jpg')] h-[142vh] sm:h-[100vh] md:h-[130vh] lg:h-[143vh]">
+    <div id="main-tag-div" class="sm:ml-[10px] flex justify-left ml-[80px] h-full ">
+        <div id="main-heading-div" class="sm:w-[100%] sm:ml-[80px] lg:ml-[150px] sm:text-[50px]  flex flex-col gap-[10px] justify-center">
+        <h1 class="sm:text-[51px] md:text-[57px] lg:text-[65px] xl:text-[70px] xl:mt-[50px] borderlg:text-[60px] xl:text-[70px] tracking-[2px] text-black">Providing <br> Best <br> 
             <span class="text-[#25A4AD] font-[poppins] font-bold">Web Services</span>
         </h1>
             <div>
@@ -50,15 +53,22 @@
 </main>
 
 
+                                                 <!-- Logos Section  -->
 
     <section class="bg-[#f8f8f8]">
-    <svg width="156" height="33" viewBox="0 0 156 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M41.061 13.4404C40.4567 10.6546 38.9688 8.02012 36.5758 5.98216C30.7287 1.00194 22.4361 1.98695 17.7594 7.64437L17.7591 7.64464L17.7588 7.64492L0.772038 28.1934C-0.330071 29.5267 -0.244284 31.0098 0.978581 32.0513C2.20145 33.0929 3.65544 32.921 4.75755 31.5879L14.9287 19.2839L21.6979 11.0958L21.6993 11.0969C21.7146 11.0778 21.729 11.0581 21.7446 11.0392C21.8372 10.9272 21.9318 10.819 22.0277 10.7134C22.0432 10.6964 22.0596 10.6801 22.0752 10.6629C25.1793 7.30854 30.0626 7.24781 33.2709 9.98015C33.2709 9.98015 33.29 9.99236 33.326 10.0126C37.0944 13.268 36.8941 18.4811 34.2451 21.6854C34.1528 21.7972 33.9304 22.0446 33.9145 22.0615C30.8106 25.4158 26.0011 25.4879 22.6639 22.7118C21.9673 22.11 21.4064 21.4414 20.9717 20.7307C20.4504 19.8785 19.262 19.7925 18.6279 20.5618L16.4494 23.2037C17.2023 24.4999 18.1891 25.6992 19.4139 26.7425C25.261 31.7224 33.5536 30.7374 38.2303 25.0803C38.2303 25.0803 41.9683 20.6805 41.061 13.4404Z" fill="#313131"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M41.0696 13.442L51.241 1.13823C52.3432 -0.195079 53.7969 -0.366734 55.0197 0.674568C56.2426 1.71615 56.3287 3.19948 55.2266 4.53252L38.2305 25.0796C33.5538 30.737 25.2609 31.7217 19.4138 26.7418C18.1893 25.6988 17.2024 24.4992 16.4492 23.2033L18.6278 20.5611C19.2621 19.7921 20.4506 19.8781 20.9719 20.7302C21.4065 21.4407 21.9759 22.1115 22.6726 22.7133C25.9841 25.4786 30.8053 25.4179 33.9095 22.0636C33.9136 22.0591 34.172 21.7693 34.24 21.6873L41.0696 13.442Z" fill="#313131"/>
-    </svg>
+        <div class="flex justify-around ml-[20px] mr-[20px] p-[50px]">
+            <img class="h-[22px] w-[120px]" src="../assests/planday-logo.png" alt="planday-logo">
+            <img class="h-[22px] w-[120px]" src="../assests/umbraco-log.png" alt="umbraco-logo">
+            <img class="h-[22px] w-[120px]" src="../assests/pearlfisher-log.png" alt="pearlfisher-logo">
+            <img class="h-[22px] w-[120px]" src="../assests/brightpearl-logo.png" alt="brightpearl-logo">
+            <img class="h-[22px] w-[120px]"src="../assests/planday-logo.png" alt="planday-logo">
+
+        </div>
     </section>
 
-                                   <!-- Services Section -->
+                                                <!-- Services Section -->
+
+
 
 <section class="mt-[70px]">
 
@@ -122,7 +132,9 @@
 
 
 
-<!-- Features Section  -->
+                                                    <!-- Features Section  -->
+
+
 <section class=" mt-[70px] bg-[#f8f8f8]">
     <div class="w-[50%] m-auto text-center">
     <h2 class="text-[50px]"><span class="font-extralight text-center">Our </span><span class="text-[#25A4AD] font-[Montserrat] font-bold">Features</span></h2>
@@ -155,7 +167,9 @@
     <button class=" w-[130px] h-[40px] text-[12px] text-[#25A4AD] border border-[#25A4AD] mt-[50px] flex justify-center m-auto items-center hover:text-[#fff] hover:bg-[#25a4ad] cursor-pointer">Explore All</button>
 </section>
 
-<!-- Client Section -->
+
+                                                <!-- Client Section -->
+
 
 <section class="mt-[70px] w-[50%] m-auto text-center">
     <div>
@@ -188,34 +202,98 @@
 
 </section>
 <div class="flex mt-[35px] gap-[60px] text-[#25A4AD] justify-center">
-    <button class="border rounded-[20px] pl-[30px] pr-[30px] pt-[4px] pb-[4px] cursor-pointer">←</button>
-    <button class="border rounded-[20px] pl-[30px] pr-[30px] cursor-pointer">→</button>
+    <button class="border rounded-[20px] pl-[30px] pr-[30px] pt-[4px] pb-[4px] cursor-pointer hover:bg-[#25a4ad] hover:text-[#fff]">←</button>
+    <button class="border rounded-[20px] pl-[30px] pr-[30px] cursor-pointer hover:bg-[#25a4ad] hover:text-[#fff]">→</button>
 </div>
 
 
-<!-- pricing section -->
+                                              <!-- pricing section -->
 
 
-<section class="mt-[70px]">
+<section class="mt-[70px] ">
     <h2 class="text-[50px] text-center"><span class="font-extralight text-center"> Our</span><span class="text-[#25A4AD] font-[Montserrat] font-bold"> Pricing Plan</span></h2>
 
-    <section>
-        <div class="flex flex-col gap-[20px]">
-            <h3>For Starter <br> <span>$59</span></h3>
+    <section class="flex mt-[50px] m-auto justify-around ml-[60px] mr-[60px] border">
+        <div class="flex flex-col justify-center items-center gap-[20px] border p-[20px] w-[27%]">
+            <h3 class="font-[500] text-center text-[20px]">For Starter <br> <span class="text-[35px] font-extrabold">$59</span></h3>
             <nav>
-                <ul>
-                    <li>Feedback Categorization</li>
-                    <li>Features Precitization</li>
-                    <li>Real-Time Collaboration</li>
-                    <li>Feedback Loop Notification</li>
-                    <li>Essential Dev Tool Integretion</li>
+                <ul class="text-[14px]">
+                    <li class="flex gap-[3px] items-center"><img class="h-[10px] w-[10px]" src="../assests/ckeck-image.png" alt="check-image">Feedback Categorization</li>
+                    <li class="flex gap-[3px] items-center"><img class="h-[10px] w-[10px]" src="../assests/ckeck-image.png" alt="check-image">Features Precitization</li>
+                    <li class="flex gap-[3px] items-center"><img class="h-[10px] w-[10px]" src="../assests/ckeck-image.png" alt="check-image">Real-Time Collaboration</li>
+                    <li class="flex gap-[3px] items-center"><img class="h-[10px] w-[10px]" src="../assests/ckeck-image.png" alt="check-image">Feedback Loop Notification</li>
+                    <li class="flex gap-[3px] items-center"><img class="h-[10px] w-[10px]" src="../assests/ckeck-image.png" alt="check-image">Essential Dev Tool Integretion</li>
                 </ul>
             </nav>
-    <button class=" w-[160px] h-[40px] text-[12px] text-[#25A4AD] flex justify-center items-center mt-[50px] m-auto border border-[#25A4AD] hover:text-[#fff] hover:bg-[#25a4ad] cursor-pointer">Request Demo</button>
+    <button class=" w-[160px] h-[40px] text-[12px] text-[#25A4AD] flex justify-center items-center mt-[0px] m-auto border border-[#25A4AD] hover:text-[#fff] hover:bg-[#25a4ad] cursor-pointer">Request Demo</button>
+
+        </div>
+        <div class="flex flex-col justify-center items-center gap-[20px] border p-[20px] w-[27%]">
+            <h3 class="font-[500] text-[20px] text-center">For Teams<br> <span class="text-[35px] font-extrabold">$99</span></h3>
+            <nav>
+                <ul class="text-[14px]">
+                    <li class="flex gap-[3px] items-center"><img class="h-[10px] w-[10px]" src="../assests/ckeck-image.png" alt="check-image">Feedback Categorization</li>
+                    <li class="flex gap-[3px] items-center"><img class="h-[10px] w-[10px]" src="../assests/ckeck-image.png" alt="check-image">Features Pretorization</li>
+                    <li class="flex gap-[3px] items-center"><img class="h-[10px] w-[10px]" src="../assests/ckeck-image.png" alt="check-image">Real-Time Collaboration</li>
+                    <li class="flex gap-[3px] items-center"><img class="h-[10px] w-[10px]" src="../assests/ckeck-image.png" alt="check-image">Feedback Loop Notifiction</li>
+                    <li class="flex gap-[3px] items-center"><img class="h-[10px] w-[10px]" src="../assests/ckeck-image.png" alt="check-image">Essential Dev tool Integration</li>
+                </ul>
+            </nav>
+    <button class=" w-[160px] h-[40px] text-[12px] text-[#25A4AD] flex justify-center items-center mt-[0px] m-auto border border-[#25A4AD] hover:text-[#fff] hover:bg-[#25a4ad] cursor-pointer">Request Demo</button>
+
+        </div>
+        <div class="flex flex-col justify-center items-center gap-[20px] border p-[20px] w-[27%]">
+            <h3 class="font-[500] text-[20px] text-center">For Company <br> <span class="text-[35px] font-extrabold">Custom</span></h3>
+            <nav>
+                <ul class="text-[14px]">
+                    <li class="flex gap-[3px] items-center"><img class="h-[10px] w-[10px]" src="../assests/ckeck-image.png" alt="check-image">Feedback Categorization</li>
+                    <li class="flex gap-[3px] items-center"><img class="h-[10px] w-[10px]" src="../assests/ckeck-image.png" alt="check-image">Feedback Loop Notifiction</li>
+                    <li class="flex gap-[3px] items-center"><img class="h-[10px] w-[10px]" src="../assests/ckeck-image.png" alt="check-image">Essential Dev tool Integration</li>
+                </ul>
+            </nav>
+    <button class=" w-[160px] h-[40px] text-[12px] text-[#25A4AD] flex justify-center items-center m-auto border border-[#25A4AD] hover:text-[#fff] hover:bg-[#25a4ad] cursor-pointer">Request Demo</button>
 
         </div>
     </section>
 </section>
+
+
+                                              <!-- FAQs section -->
+
+
+<section class="mt-[70px]">
+    <h2 class="text-[50px] text-center text-[#25A4AD] font-[Montserrat] font-[500]">FAQs</h2>
+
+    <section class="flex flex-col gap-[35px] w-[50%] m-auto mt-[40px] ">
+    <div class="border text-[14px] p-[25px] flex items-start gap-[20px] shadow-xl/10">
+        <img class="mt-[9px]" src="../assests/Icon (1).png" alt="icon-png">
+        <div class="flex flex-col gap-[25px]">
+        <p>she met humoured sir breeding her. Six curiosity day assurance bed necessary. </p>
+        <p class="text-[12px]">Relation so in confined smallest children unpacked delicate. Why sir end believe uncivil respect. Always get adieus nature day course for common. My little garret repair to desire he esteem.</p>
+        </div>
+    </div>
+    <div class="border text-[14px] p-[25px] flex items-center gap-[20px] shadow-xl/10">
+        <img src="../assests/Icon.png" alt="icon-png">
+        <p> And excellence partiality estimating terminated day everything? </p>
+    </div>
+    <div class="border text-[14px] p-[25px] flex items-center gap-[20px] shadow-xl/10">
+        <img src="../assests/Icon.png" alt="icon-png">
+        <p>Latter person am secure of estate genius at?</p>
+    </div>
+    <div class="border text-[14px] p-[25px] flex items-center gap-[20px] shadow-xl/10">
+        <img src="../assests/Icon.png" alt="icon-png">
+        <p>Whatever landlord yourself at by pleasure of children be?</p>
+    </div>
+    </section>
+</section>
+
+
+                                    <!-- Footer -->
+
+
+    <footer class="bg-[url(../assests/Footer.png)] h-[800px] mt-[120px] m-auto">
+
+    </footer>
 
 
 

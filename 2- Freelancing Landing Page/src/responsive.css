@@ -1,0 +1,59 @@
+/* A CSS FILE FOR SCREEN SIZE BELOW 640PX */
+
+
+@media(max-width:640px) {
+#main-tag {
+    height: 100vh;
+    width: 100%;
+}
+h1 {
+    font-size: 45px;
+}
+#main-tag-div {
+    border: 1px solid red;
+    width: 100% ;
+    margin-left: 0px;
+}
+#main-heading-div{
+        margin-left: 90px;
+        margin-bottom: 30px;
+}
+}
+
+
+@media(max-width:550px) {
+#main-tag {
+    height: 100vh;
+    width: 100%;
+}
+h1 {
+    font-size: 41px;
+}
+#main-tag-div {
+    border: 1px solid red;
+    width: 100% ;
+    margin-left: 0px;
+}
+#main-heading-div{
+    margin-left: 35px;
+}
+}
+
+
+@media(max-width:444px) {
+#main-tag {
+    height: 80vh;
+    width: 100%;
+}
+h1 {
+    font-size: 35px;
+}
+#main-tag-div {
+    border: 1px solid red;
+    width: 100% ;
+    margin-left: 0px;
+}
+#main-heading-div{
+    margin-left: 35px;
+}
+}
