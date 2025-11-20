@@ -1,7 +1,7 @@
 /* A CSS FILE FOR SCREEN SIZE BELOW 640PX */
 
 
-@media(max-width:640px) {
+@media(max-width:660px) {
 #main-tag {
     height: 100vh;
     width: 100%;
@@ -10,13 +10,32 @@ h1 {
     font-size: 45px;
 }
 #main-tag-div {
-    border: 1px solid red;
     width: 100% ;
     margin-left: 0px;
 }
 #main-heading-div{
         margin-left: 90px;
         margin-bottom: 30px;
+}
+#humburger {
+    display: block;
+    cursor: pointer;
+}
+#nav-links{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 35px;
+    background-color: #fff;
+    width: 50%;
+    box-shadow: 3px 3px 5px #000;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+#nav-links.active {
+    display: flex;
 }
 }
 
@@ -30,7 +49,6 @@ h1 {
     font-size: 41px;
 }
 #main-tag-div {
-    border: 1px solid red;
     width: 100% ;
     margin-left: 0px;
 }
@@ -49,7 +67,6 @@ h1 {
     font-size: 35px;
 }
 #main-tag-div {
-    border: 1px solid red;
     width: 100% ;
     margin-left: 0px;
 }

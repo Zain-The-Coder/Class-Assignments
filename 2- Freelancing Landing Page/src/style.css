@@ -19,6 +19,17 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+#humburger{
+    display: none;
+}
+#nav-links li a {
+    transform: translateY(0px);
+    transition: all 0.7s ease;
+}
+#nav-links li a:hover  {
+    transform: translateY(-8px);
+    font-size: 15px;
+}
 button{
     transition: all 1s ease ;
 }

@@ -17,16 +17,15 @@
 
                                               <!-- Header Bar Code -->
 
-    <header id="header-tag" class="flex justify-between items-center w-[80%] m-auto mt-[20px] text-[11.3px] font-normal items-center bg-[#fff] sticky top-3 z-50 bg-[#fff]">
-        <nav>
-            <ul class="flex gap-[30px]">
-                <li><a href="#" class="focus:font-bold focus:text-[13px] focus:text-[#25A4AD]">Payme</a></li>
-                <li><a href="#" class="focus:font-bold focus:text-[13px] focus:text-[#25A4AD]">Home</a></li>
-                <li><a href="#" class="focus:font-bold focus:text-[13px] focus:text-[#25A4AD]">About</a></li>
-                <li><a href="#" class="focus:font-bold focus:text-[13px] focus:text-[#25A4AD]">Testimonials</a></li>
-                <li><a href="#" class="focus:font-bold focus:text-[13px] focus:text-[#25A4AD]">Contacts</a></li>
+    <header id="header-tag" class="flex justify-between items-center w-[83%] m-auto mt-[20px] text-[11.3px] font-normal items-center bg-[#fff] sticky top-3 z-50 bg-[#fff]">
+            <ul id="nav-links" class="flex gap-[30px]">
+                <li><a href="#" class="focus:font-bold focus:text-[13px] focus:text-[#25A4AD] inline-block hover:text-[#25A4AD]">Payme</a></li>
+                <li><a href="#" class="focus:font-bold focus:text-[13px] focus:text-[#25A4AD] inline-block hover:text-[#25A4AD]">Home</a></li>
+                <li><a href="#" class="focus:font-bold focus:text-[13px] focus:text-[#25A4AD] inline-block hover:text-[#25A4AD]">About</a></li>
+                <li><a href="#" class="focus:font-bold focus:text-[13px] focus:text-[#25A4AD] inline-block hover:text-[#25A4AD]">Testimonials</a></li>
+                <li><a href="#" class="focus:font-bold focus:text-[13px] focus:text-[#25A4AD] inline-block hover:text-[#25A4AD]">Contacts</a></li>
             </ul>
-        </nav>
+        <div id="humburger"><img class="h-[30px] w-[30px]" src="../assests/humburger-icon.png" alt="humburger-icon"></div>
 
         <div id="header-button-div" class="flex gap-[17px] relative">
             <button class="pointer">Sign In</button>
@@ -298,6 +297,15 @@
 
 
 
+
+    <script>
+        let links = document.getElementById("nav-links");
+        let humburger = document.getElementById("humburger");
+        
+        humburger.addEventListener("click" , () => {
+            links.classList.toggle("active");
+        })
+    </script>
 </body>
 </html>
 
