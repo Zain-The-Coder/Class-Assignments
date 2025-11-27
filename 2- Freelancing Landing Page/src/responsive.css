@@ -2,6 +2,16 @@
 
 
 @media(max-width:680px) {
+#logos-section div img{
+    height: 14%;
+    width: 14%;
+}
+#logos-section div {
+    padding: 17px;
+    border: 1px solid black;
+    margin-left: 5px;
+    align-items: center;
+}
 #main-tag {
     height: 100vh;
     width: 100%;
@@ -41,6 +51,16 @@ h1 {
 
 
 @media(max-width:550px) {
+#logos-section div img{
+    height: 12.5%;
+    width: 12.5%;
+}
+#logos-section div {
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 5px;
+    align-items: center;
+}
 #main-tag {
     height: 100vh;
     width: 100%;
@@ -59,6 +79,22 @@ h1 {
 
 
 @media(max-width:444px) {
+.heading {
+    font-size: 20px;
+}
+.heading-para {
+    font-size: 10px;
+}
+#logos-section div img{
+    height: 10%;
+    width: 10%;
+}
+#logos-section div {
+    padding: 8px;
+    border: 1px solid black;
+    margin-left: 5px;
+    align-items: center;
+}
 #main-tag {
     height: 80vh;
     width: 100%;
