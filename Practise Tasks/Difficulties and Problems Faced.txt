@@ -1,0 +1,92 @@
+1. Scope (Hadeen)
+var (Function Scope):var purana aur "dheet" hai. Ye loop ke khatam hone ka intezar nahi karta aur poore code ke liye ek hi variable ban jata hai. Is liye setTimeout jab chalta hai, usay sirf loop ki akhri value milti hai.
+
+let aur const (Block Scope): Ye modern tareeke hain. Ye har baar loop chalne par ek "naya kamra" (scope) banate hain. Is se har timer apni apni value ko yaad rakhta hai.
+
+2. The Event Loop (Wait aur Execution)
+JavaScript Line-by-Line toh chalti hai, lekin setTimeout ko "Wait list" mein daal deti hai.
+
+Loop foran khatam ho jata hai.
+
+Timer background mein chalta rehta hai.
+
+Jab time poora hota hai, tabhi output aata hai.
+
+Isi liye aapne dekha hoga ke loop khatam pehle ho gaye, lekin logs baad mein aa rahe hain.
+
+3. Difference between for...in and for...of
+for...in: Ye cheezon ki Properties (Keys) dhoondne ke liye hota hai (jaise object ki keys).
+
+for...of: Ye cheezon ki Values nikalne ke liye hota hai (jaise array ke andar rakha hua data).
+
+Keyword,Behavior,Result in Loop
+var,Gloabl/Function scope,Sab logs mein same (last) value ayegi.
+let,Block scope,Har log mein sahi aur alag value ayegi.
+const,Block scope (Fixed),"Value ko lock kar deta hai, ye bhi sahi result deta hai."
+
+
+
+⚠️ Golden Rule (YAAD RAKHO)
+
+🟢 Object methods ke liye → normal function
+🔴 Arrow function object ka this nahi samajhta
+
+Arrow function ka apna this nahi hota
+
+Ye this bahar ke scope (global / window) se uthata hai
+
+Object ka this ❌ use nahi karta
+
+
+Arrow functions do tareeqon se value return karti hain:
+
+1️⃣ Implicit Return (khud-ba-khud return)
+👉 Jab function sirf ek expression ho
+👉 Curly braces {} nahi hotay
+👉 return likhna nahi parta
+			Example : const numbers = [1, 2, 3, 4];
+			const squares = numbers.map(num => num * num);
+				console.log(squares);
+			// [1, 4, 9, 16]
+
+
+2️⃣ Explicit Return (khud likh kar return)
+👉 Jab {} use hotay hain
+👉 return likhna zaroori hota hai
+                                                          Example : const numbers = [1, 2, 3, 4];
+			const squares = numbers.map(num => {
+  		     	           return num * num;
+			});
+			console.log(squares);
+			// [1, 4, 9, 16]
+
+
+🔁 Array Transformation kya hoti hai?
+Jab hum array ke har element ko change kar ke naya array banate hain.
+
+“Return use karne ke liye alag se function banana zaroori nahi hota,
+kyun ke map() ka callback arrow function khud return karta hai.”
+
+
+~~~Arrow Function and Normal Function~~~Behaviour and Readability .....
+Arrow function: this ka context surrounding scope se lete hai.
+Normal function: this apna khud ka context hota hai (jo function ke call method pe depend karta hai).
+
+const obj = {
+    name: "Zain",
+    arrowFunc: () => console.log(this.name),
+    normalFunc() { console.log(this.name); }
+}
+
+obj.arrowFunc();  // undefined (arrow function me this global/window ki taraf point karega)
+obj.normalFunc(); // "Zain" (normal function me this obj ko point karega)
+
+“Arrow function more concise hoti hai aur apna this nahi rakhti,
+jab ke normal function ka apna this hota hai.”
+
+
+Loops~!!!
+for (ye loop normal hai , bachpan sy parh raha hu , overall cantrol deta  hai )
+for.In (ye loop index deta hai ye to pta hoga magar yaad ye rakhna hai k {ye index "string" ke form may deta hai } )
+yahi for.in loop agar object pr chala diya to paglon ke tarah sirif key la kr dy dega.
+for.Of Loop(ye bhai object pr chalta he ni)
