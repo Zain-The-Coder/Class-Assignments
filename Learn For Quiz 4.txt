@@ -1,0 +1,13 @@
+forEach: Ye sirf ek loop hai. Ye kuch wapis (return) nahi karta.
+
+map: Ye har baar ek naya array banata hai. Agar tum return nahi likhoge, toh naya array undefined se bhar jayega.
+
+reduce: Iska toh maqsad hi accumulator ko return karna hai taake agli iteration mein wo value mil sakay.
+
+Tip: Agar tum initialValue nahi doge, toh accumulator pehle element ko utha lega aur loop doosre element se shuru hoga. Hamesha initialValue dena behtar practice hai taake error na aaye.
+
+Jab aap forEach use karte hain, toh aap forEach ko ek chota sa function (callback) pakra dete hain.
+
+Aapka return sirf us chote function ko khatam karta hai.
+
+forEach khud ek "black hole" ki tarah hai; woh andar se aane wali kisi bhi value ko bahar pheknay ka darwaza hi nahi rakhta.
