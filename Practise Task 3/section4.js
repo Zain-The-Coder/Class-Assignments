@@ -37,35 +37,35 @@ secondFunction(() => {
 
 
 //Task 4.2 – Asynchronous Callback Observation
-//  function firstFunction() {
-//     const currentTime = new Date();
-//     let hour = currentTime.getHours();
-//     let minutes = currentTime.getMinutes();
-//     let second = currentTime.getSeconds();
-//     let time = `${hour} : ${minutes} : ${second}`;
+ function firstFunction() {
+    const currentTime = new Date();
+    let hour = currentTime.getHours();
+    let minutes = currentTime.getMinutes();
+    let second = currentTime.getSeconds();
+    let time = `${hour} : ${minutes} : ${second}`;
 
-//     console.log(`First function start at: ${time}`);
-//     console.log(`First function end at: ${time}`);
-// }
+    console.log(`First function start at: ${time}`);
+    console.log(`First function end at: ${time}`);
+}
 
-// function secondFunction() {
-//     const currentTime = new Date();
-//     let hour = currentTime.getHours();
-//     let minutes = currentTime.getMinutes();
-//     let second = currentTime.getSeconds();
-//     let time = `${hour} : ${minutes} : ${second}`;
+function secondFunction() {
+    const currentTime = new Date();
+    let hour = currentTime.getHours();
+    let minutes = currentTime.getMinutes();
+    let second = currentTime.getSeconds();
+    let time = `${hour} : ${minutes} : ${second}`;
 
-//     console.log(`Second function start at: ${time}`);
+    console.log(`Second function start at: ${time}`);
 
-//     setTimeout(() => {
-//     const currentTime = new Date();
-//     let hour = currentTime.getHours();
-//     let minutes = currentTime.getMinutes();
-//     let second = currentTime.getSeconds();
-//     let time = `${hour} : ${minutes} : ${second}`;
-//         console.log(`Second function end at: ${time}`);
-//     }, 2000);
-// }
+    setTimeout(() => {
+    const currentTime = new Date();
+    let hour = currentTime.getHours();
+    let minutes = currentTime.getMinutes();
+    let second = currentTime.getSeconds();
+    let time = `${hour} : ${minutes} : ${second}`;
+        console.log(`Second function end at: ${time}`);
+    }, 2000);
+}
 
-// firstFunction();
-// secondFunction();
+firstFunction();
+secondFunction();
