@@ -22,6 +22,15 @@
 - har closure apne alag memory banata hai 
 
 
+=> Section 3
+
+>task 3.1
+- prototype object har constructor k liye hota hai
+- Prototype method object ki own property nahi hoti, balkay prototype se aati hai.
+- __proto__ object ko uske constructor ke prototype se link karta hai.
+
+> task 3.2
+
 => Section 4
 
 >task 4.1
